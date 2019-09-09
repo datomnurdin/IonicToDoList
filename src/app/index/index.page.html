@@ -22,6 +22,7 @@
           </ion-item>
       
           <ion-item-options side="end">
+            <ion-item-option color="secondary" (click)="show(task.taskId, task.name, task.description)">Show</ion-item-option>
             <ion-item-option (click)="update(task.taskId, task.name, task.description)">Update</ion-item-option>
           </ion-item-options>
         </ion-item-sliding>
