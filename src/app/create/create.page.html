@@ -16,5 +16,6 @@
       <ion-label position="floating">Description</ion-label>
       <ion-textarea [(ngModel)]="description"></ion-textarea>
   </ion-item>
-  <ion-button expand="block" padding color="tertiary" fill="outline" (click)="createdProcess()">Submit</ion-button>
+  <ion-button expand="block" padding color="tertiary" *ngIf="!id" fill="outline" (click)="createdProcess()">Submit</ion-button>
+  <ion-button expand="block" padding color="tertiary" *ngIf="id>=1" fill="outline" (click)="updatedProcess()">Update</ion-button>
 </ion-content>
