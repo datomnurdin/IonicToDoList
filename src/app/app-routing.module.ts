@@ -7,7 +7,7 @@ const routes: Routes = [
   { path: 'index', loadChildren: './index/index.module#IndexPageModule' },
   { path: 'create', loadChildren: './create/create.module#CreatePageModule' },
   { path: 'create/:id/:name/:description', loadChildren: './create/create.module#CreatePageModule' },
-  { path: 'show', loadChildren: './show/show.module#ShowPageModule' },
+  { path: 'show/:id/:name/:description', loadChildren: './show/show.module#ShowPageModule' },
 ];
 
 @NgModule({

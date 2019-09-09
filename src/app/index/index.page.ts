@@ -32,6 +32,10 @@ export class IndexPage implements OnInit {
     this.router.navigate(['/create/'+id+'/'+name+'/'+description]);
   }
 
+  show(id,name,description){
+    this.router.navigate(['/show/'+id+'/'+name+'/'+description]);
+  }
+
   delete(id){
     let body = {
       taskId:id
