@@ -28,6 +28,20 @@ export class IndexPage implements OnInit {
     this.router.navigate(['/create']);
   }
 
+  update(id,name,description){
+    this.router.navigate(['/create/'+id+'/'+name+'/'+description]);
+  }
+
+  delete(id){
+    let body = {
+      taskId:id
+    };
+
+      this.provider.postData(body, 'delete_task.php').subscribe(data => {
+        this.ionViewWillEnter();
+      });
+  }
+
   loadTask(){
     return new Promise(resolve =>{
       let body = {};
