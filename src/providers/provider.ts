@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class Provider {
 
-    server: string = "http://localhost:8888/todolist-api/";
+  server: string = "http://localhost:8888/todolist-api/";
 
   constructor(public http : Http) {    
   }
